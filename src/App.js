@@ -6,8 +6,8 @@ import Header from './components/Header'
 import Admin from './components/Admin'
 import Card from './components/Card'
 
-//FireBase
-import base from './base'
+// //FireBase
+// import base from './base'
 
 class App extends Component {
   state = {
@@ -16,16 +16,16 @@ class App extends Component {
   }
 //synchronisation de notre base de donnée firebase grace au componentdidimount 
 //on synchronise d'abord avec context : this et on ajoute ensuite notre state
-  componentDidMount () {
-    this.ref = base.syncState (`/${this.state.pseudo}/recettes`, {
-      context : this,
-      state : 'recettes'
-    })
-  }
+  // componentDidMount () {
+  //   this.ref = base.syncState (`/${this.state.pseudo}/recettes`, {
+  //     context : this,
+  //     state : 'recettes'
+  //   })
+  // }
 
-  componentWillMount () {
-    base.removeBinding (this.ref)
-  }
+  // componentWillMount () {
+  //   base.removeBinding (this.ref)
+  // }
 
   chargerExemple = () => this.setState({recettes})
 
