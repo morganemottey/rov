@@ -24,10 +24,10 @@ handleSubmit = event => {
     return (
       <div className ="cards">
        <form className = 'admin-form ajouter-rectte' onSubmit= {this.handleSubmit}>
-        <input value = {this.state.nom} onChange = {this.handleChange} name="nom" type ='text' placeholder= "Name/имя"></input>
-        <input value = {this.state.image} onChange = {this.handleChange} name="image" type= 'text' placeholder= "Picture/фамилия"></input>
-        <textarea value = {this.state.ingredients} onChange = {this.handleChange} name="ingredients" rows="3" placeholder="Ingrédients/Ингредиенты"></textarea>
-        <textarea value = {this.state.instructions} onChange = {this.handleChange} name="instructions" rows="15" placeholder="Instructions/инструкции"></textarea>
+        <input value = {this.state.nom} onChange = {this.handleChange} name="nom" type ='text' placeholder= "имя"></input>
+        <input value = {this.state.image} onChange = {this.handleChange} name="image" type= 'text' placeholder= "фамилия"></input>
+        <textarea value = {this.state.ingredients} onChange = {this.handleChange} name="ingredients" rows="3" placeholder="Ингредиенты"></textarea>
+        <textarea value = {this.state.instructions} onChange = {this.handleChange} name="instructions" rows="15" placeholder="инструкции"></textarea>
        </form>
       </div>
     )
